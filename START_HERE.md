@@ -2,6 +2,7 @@
 
 **Welcome!** You've cloned a comprehensive project template. This file will guide you to exactly what you need.
 
+Iles Wade
 ---
 
 ## 🎯 Who Are You?
