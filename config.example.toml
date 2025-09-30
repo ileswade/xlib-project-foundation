@@ -1,0 +1,64 @@
+# Example Configuration File
+# Copy this to config.toml and fill in your actual values
+# Don't commit config.toml to git (it's in .gitignore)
+
+[app]
+name = "Your Application Name"
+version = "0.1.0"
+debug = false
+environment = "development"  # development, staging, production
+
+[ai]
+# AI Provider Configuration
+# See AIManager API Keys.txt for free development keys
+provider = "claude"  # claude, openai, deepseek, mock
+model = "current"    # latest, current, fast, reasoning
+
+# API Keys - Replace with your actual keys
+# Get free keys from:
+# - Claude: https://console.anthropic.com/
+# - OpenAI: https://platform.openai.com/
+# - DeepSeek: https://platform.deepseek.com/
+anthropic_api_key = "your-claude-api-key-here"
+openai_api_key = "your-openai-api-key-here"
+deepseek_api_key = "your-deepseek-api-key-here"
+
+# Or use environment variables
+# anthropic_api_key = "${ANTHROPIC_API_KEY}"
+# openai_api_key = "${OPENAI_API_KEY}"
+
+[database]
+# Database Configuration (if needed)
+host = "${DB_HOST:localhost}"
+port = "${DB_PORT:5432}"
+name = "${DB_NAME:myapp}"
+username = "${DB_USER:postgres}"
+password = "${DB_PASSWORD}"
+pool_size = 10
+timeout = 30.0
+
+[api]
+# External API Configuration (if needed)
+base_url = "https://api.example.com"
+timeout = 30.0
+retries = 3
+rate_limit_per_minute = 60
+
+[paths]
+# Application Paths
+data_dir = "./data"
+logs_dir = "./logs"
+cache_dir = "./cache"
+output_dir = "./output"
+
+[logging]
+# Logging Configuration
+level = "INFO"  # DEBUG, INFO, WARNING, ERROR, CRITICAL
+format = "%(asctime)s - %(name)s - %(levelname)s - %(message)s"
+file = "app.log"
+
+[features]
+# Feature Flags
+enable_caching = true
+enable_metrics = false
+enable_debug_mode = false
