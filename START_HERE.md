@@ -15,9 +15,8 @@ When you clone this repository, you'll find:
 your-new-project/
 ├── START_HERE.md              ← You are here!
 ├── src/                       ← Your source code goes here
-│   └── your_project/
-│       ├── __init__.py
-│       └── main.py
+│   ├── __init__.py
+│   └── main.py
 │
 └── xLibrary Reference/        ← Documentation and examples
     ├── docs/                  (42 chapters - complete xLibrary documentation)
@@ -223,10 +222,10 @@ This is **optional** - many users prefer to work with xLibrary purely as a techn
 
 Your application code goes here. The starter includes:
 
-- `your_project/__init__.py` - Package initialization
-- `your_project/main.py` - Example application with AI and config examples
+- `__init__.py` - Package initialization
+- `main.py` - Example application with AI and config examples
 
-**Rename `your_project` to your actual project name!**
+Add your Python modules directly in this folder.
 
 ### xLibrary Reference/ Folder
 
